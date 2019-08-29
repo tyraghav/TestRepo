@@ -12,9 +12,4 @@ public class JobRestServices {
 	@Autowired
 	JobServices jobServices;
 	
-	@RequestMapping("/temp")
-	public void getAllJobsFromGithub(){
-		jobServices.getAllJobsFromGithub();
-	}
-	
 }
