@@ -6,6 +6,9 @@ pipeline {
     }
     stages {
         stage ('Initialize') {
+            steps {
+                echo 'HELLO WORLD'
+            }
         }
 
         stage ('Build') {
