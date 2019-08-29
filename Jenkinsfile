@@ -6,8 +6,6 @@ pipeline {
     }
     stages {
         stage ('Initialize') {
-            steps {
-            }
         }
 
         stage ('Build') {
