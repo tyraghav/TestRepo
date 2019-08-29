@@ -27,4 +27,9 @@ public class JobServices {
 		List<TblJob> pJobs = jobMapper.jsonToEntityMapper(jobMapper.arrayToArrayListMapper(jobArray));
 		tblJobsRepository.saveAll(pJobs);
 	}
+	
+	public List<Job> getAllJobs(){
+		return jobMapper.entityToJsonMapper(tblJobsRepository.findAll());
+	}
+	
 }
